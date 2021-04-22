@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<meta charset="UTF-8">
+		
 		<title> HarlemJan's website </title>
 		<style>
 			body{
@@ -9,6 +11,7 @@
 			}
 			h1{
 			font-family: Helvetica;
+			font-size: 25px;
 			}
 			body
 			{
@@ -151,11 +154,48 @@
 			text-align:center;
 			}
 			
-			div.c{
-			text-align: center;
-			border-radius: 0;
-		
+			.container {
+			position: relative;
+			width: 50%;
+			height: auto;
+			margin-left: 25%;		
 			}
+
+			.image {
+			display: block;
+			width: 100%;
+			height: auto;
+			}
+
+			.overlay {
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			right: 0;
+			background-color: #4fab58;
+			overflow: hidden;
+			width: 100%;
+			height: 0;
+			transition: .5s ease;
+			}
+
+			.container:hover .overlay {
+			bottom: 0;
+			height: 100%;
+			}
+
+			.text {
+			white-space: nowrap; 
+			color: white;
+			font-size: 20px;
+			position: absolute;
+			overflow: hidden;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			}
+			
 			div.d{
 			text-align: justify;
 			}
@@ -168,6 +208,11 @@
 			height: 125px;
 			
 			background-image: linear-gradient(#1a1a00, #1a0500);
+			}
+			b{
+			color: #4fab58;
+			}
+	
 			
 		</style>
 	</head>
@@ -193,13 +238,13 @@
 	</div>
 	</nav>
 	<br/><br/><br/><br/><br/>
-	<div class="c">
-	<img id="img2" src="logo.png" alt="logo" style="width:600px;height:300px;>
+	<div class="container">
+	<img src="logo.png" alt="logo" class="image">
+	<div class="overlay">
+    <div class="text"><h1>Welcome to my Personal Website *^-^*</h1></div>
 	</div>
-	<div class="a">
-	<br/><br/><br/><br/>
-	<h1>Welcome to my Personal Website *^-^*</h1>
 	</div>
+	
 	<br/><br/><br/><br/>
 	<h2>Who am i?</h2>
 	<br/><br/>
