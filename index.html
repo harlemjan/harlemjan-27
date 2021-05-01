@@ -3,18 +3,18 @@
 	<head>
 		
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		
 		<title> HarlemJan's website </title>
 		<style>
-			body{
-			background-color:#1a0500;
-			}
+			
 			h1{
 			font-family: Helvetica;
-			font-size: 25px;
+			font-size: 10px;
 			}
 			body
 			{
+			background-color:#2e5949;
 			margin: 0;
 			padding: 0;
 			color: #cdcdcd;
@@ -24,7 +24,7 @@
 			#menuToggle
 			{
 			display: block;
-			position: relative;
+			position: fixed;
 			top: 50px;
 			left: 50px;
   
@@ -74,8 +74,9 @@
 			margin-bottom: 5px;
 			position: relative;
   
-			background: #cdcdcd;
+			background: #ccffeb;
 			border-radius: 3px;
+			box-shadow: 9px 4px 4px #132b22;
   
 			z-index: 1;
   
@@ -116,13 +117,13 @@
 
 			#menu
 			{
-			position: absolute;
+			position: fixed;
 			width: 300px;
 			margin: -100px 0 0 -50px;
 			padding: 50px;
 			padding-top: 125px;
   
-			background: #ededed;
+			background: #aed4c5;
 			list-style-type: none;
 			-webkit-font-smoothing: antialiased;
  
@@ -158,7 +159,8 @@
 			position: relative;
 			width: 50%;
 			height: auto;
-			margin-left: 25%;		
+			margin-left: 25%;
+		
 			}
 
 			.image {
@@ -177,6 +179,7 @@
 			width: 100%;
 			height: 0;
 			transition: .5s ease;
+			border-radius: 50px 25px;
 			}
 
 			.container:hover .overlay {
@@ -187,7 +190,7 @@
 			.text {
 			white-space: nowrap; 
 			color: white;
-			font-size: 20px;
+			font-size: 10px;
 			position: absolute;
 			overflow: hidden;
 			top: 50%;
@@ -202,18 +205,39 @@
 			
 			#grad1 {
 			height: 125px;
-			background-image: linear-gradient(180deg,#1a0500, #1a1a00);
+			background-image: linear-gradient(180deg,#2e5949,#3d6958);
 			}
 			#grad2{
 			height: 125px;
 			
-			background-image: linear-gradient(#1a1a00, #1a0500);
+			background-image: linear-gradient(#3d6958, #2e5949);
 			}
 			b{
 			color: #4fab58;
 			}
-	
-			
+			#akoto{
+			border-radius: 50px 25px;
+			}
+			#welkam{
+			border-radius: 50px 25px;
+			}
+			#myBtn {
+			position: fixed;
+			bottom: 5px;
+			float: right;
+			right: 18.5%;
+			left: 77.25%;
+			max-width: 100px;
+			width: 100%;
+			font-size: 15px;
+			border-color: rgba(85, 85, 85, 0.2);
+			background-color: #3b9c76;
+			padding: 10px;
+			border-radius: 4px;
+			}
+			#myBtn:hover {
+			background-color: #47fcb5;
+			}
 		</style>
 	</head>
 	<body>
@@ -226,20 +250,22 @@
     <span></span>
 	
     <ul id="menu">
-	<img src="mee.jpg" alt="That's me" style="width:150px;height:150px; >
+	<div class="container">
+	<img src="mee.jpg" alt="That's me" style="width:150px;height:150px;" id="akoto">
+	</div>
 	<br/>
 	  <a href=""><li><strong><b>Contact Me!</b></strong></li></a>
       <a href="https://web.facebook.com/HitYouWithThatDDUDUDDU/"><li>Facebook</li></a>
       <a href="https://www.instagram.com/jan_england_music/"><li>Instagram</li></a>
       <a href="https://www.youtube.com/channel/UCQLq5l4swgMcExrJIshsJDg/featured"><li>Youtube</li></a>
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><li>Don't click this!</li></a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><li>.</li></a>
 	  <a href="https://imgs.smoothradio.com/images/191589?crop=16_9&width=660&relax=1&signature=Rz93ikqcAz7BcX6SKiEC94zJnqo="><li>and this</li></a>
     </ul>
 	</div>
 	</nav>
 	<br/><br/><br/><br/><br/>
 	<div class="container">
-	<img src="logo.png" alt="logo" class="image">
+	<img src="logo.png" alt="logo" class="image" id="welkam">
 	<div class="overlay">
     <div class="text"><h1>Welcome to my Personal Website *^-^*</h1></div>
 	</div>
@@ -255,21 +281,22 @@
 	Right now, I am often busy because of activities 
 	to do and chores at home.</h4></div>
 	<br/>
-	<h5>I no longer know what to put here.</h5>
+	<h5>let me tell u</h5>
 	<br/>
 	<div class="d">
-	<h3>back in 2016, i learned how to make music on Fl Studio and i am curious about the other dj's that creates music. 
+	<h3>Back in 2016, i learned how to make music on Fl Studio and i am curious about the other dj's that creates music. 
 	i wonder how they make music, So i studied how to use Fl studio and then i produced my own music but it is not that good 
 	since my knowledge in music is very small. so i keep practice and watch some tutorials on youtube, and i keep practicing 
 	on creating beats. but my computer crashed in 2018, so i don't produce beats anymore. but in 2020, 
 	i make beats again on laptop.</h3>
 	</div>
 	<div id="grad1">
-	gagagagagag
+	Now, i am happy with my life.
 	</div>
 	<div id="grad2">
-	agagagagagagagagagagaga
+	
 	</div>
-	gagagagag
+	gagag
+	<button id="myBtn"><a href="#top" style="color: white">back to top</a></button>
 	</body>
 </html>
